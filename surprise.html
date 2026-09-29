@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>One More Thing... 🐰</title>
+
+    <link rel="stylesheet" href="surprise.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+  <audio id="memoriesMusic" loop>
+  <source src="audio/memories-song.mp3" type="audio/mpeg">
+</audio>
+    <!-- =================================
+         INTRO
+    ================================== -->
+
+    <section class="surprise-intro">
+
+        <div class="floating-stars"></div>
+
+        <p class="surprise-label">
+            ONE MORE THING...
+        </p>
+
+        <h1>
+            This part
+            <br>
+            <i>is just for you.</i>
+        </h1>
+
+        <p class="intro-text">
+            Because one birthday surprise
+            <br>
+            was obviously not enough.
+        </p>
+
+        <button
+            class="start-surprise"
+            id="startSurprise">
+
+            Let's begin ↓
+
+        </button>
+
+    </section>
+
+
+    <!-- =================================
+         MEMORIES
+    ================================== -->
+
+    <section class="memories-section" id="memoriesSection">
+
+  <div class="memory-header">
+    <p class="chapter">OUR LITTLE MEMORIES</p>
+    <h2>Some moments<br><i>I want to keep forever.</i></h2>
+    <p>Every picture has a little piece of us.</p>
+  </div>
+
+<div class="memory-slideshow" id="memorySlideshow">
+
+    <div class="memory-card active">
+        <img src="images/memory-01.jpeg" alt="Memory 1">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-02.jpeg" alt="Memory 2">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-03.jpeg" alt="Memory 3">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-04.jpeg" alt="Memory 4">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-05.jpeg" alt="Memory 5">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-06.jpeg" alt="Memory 6">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-07.jpeg" alt="Memory 7">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-08.jpeg" alt="Memory 8">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-09.jpeg" alt="Memory 9">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-10.jpeg" alt="Memory 10">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-11.jpeg" alt="Memory 11">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-12.jpeg" alt="Memory 12">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-13.jpeg" alt="Memory 13">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-14.jpeg" alt="Memory 14">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-15.jpeg" alt="Memory 15">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-16.jpeg" alt="Memory 16">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-17.jpeg" alt="Memory 17">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-18.jpeg" alt="Memory 18">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-19.jpeg" alt="Memory 19">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-20.jpeg" alt="Memory 20">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-21.jpeg" alt="Memory 21">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-22.jpeg" alt="Memory 22">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-23.jpeg" alt="Memory 23">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-24.jpeg" alt="Memory 24">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-25.jpeg" alt="Memory 25">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-26.jpeg" alt="Memory 26">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-27.jpeg" alt="Memory 27">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-28.jpeg" alt="Memory 28">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-29.jpeg" alt="Memory 29">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-30.jpeg" alt="Memory 30">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-31.jpeg" alt="Memory 31">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-32.jpeg" alt="Memory 32">
+    </div>
+
+    <div class="memory-card">
+        <img src="images/memory-33.jpeg" alt="Memory 33">
+    </div>
+
+</div>
+
+  <div class="memory-progress">
+    <span class="current-memory">01</span>
+    <div class="progress-line">
+      <div id="memoryProgress"></div>
+    </div>
+    <span>33</span>
+  </div>
+
+  <button class="continue-story" id="goToCake">
+    Now let's make a wish ↓
+  </button>
+
+</section>
+
+
+
+    <!-- =================================
+         CAKE
+    ================================== -->
+
+    <section
+        class="cake-section"
+        id="cakeSection">
+
+        <p class="section-number">
+            02 / MAKE A WISH
+        </p>
+
+        <h2>
+            Make a wish,
+            <br>
+            <i>Rabbituu.</i>
+        </h2>
+
+        <p class="cake-instruction">
+            Click every candle to blow it out.
+        </p>
+
+
+        <div class="cake-area">
+
+            <div class="cake">
+
+                <div class="candle candle-1" data-candle="1">
+                    <div class="flame"></div>
+                    <div class="wick"></div>
+                    <div class="candle-body"></div>
+                </div>
+
+                <div class="candle candle-2" data-candle="2">
+                    <div class="flame"></div>
+                    <div class="wick"></div>
+                    <div class="candle-body"></div>
+                </div>
+
+                <div class="candle candle-3" data-candle="3">
+                    <div class="flame"></div>
+                    <div class="wick"></div>
+                    <div class="candle-body"></div>
+                </div>
+
+                <div class="candle candle-4" data-candle="4">
+                    <div class="flame"></div>
+                    <div class="wick"></div>
+                    <div class="candle-body"></div>
+                </div>
+
+                <div class="candle candle-5" data-candle="5">
+                    <div class="flame"></div>
+                    <div class="wick"></div>
+                    <div class="candle-body"></div>
+                </div>
+
+                <div class="cake-top"></div>
+
+                <div class="cake-middle"></div>
+
+                <div class="cake-bottom"></div>
+
+            </div>
+
+        </div>
+
+
+        <p
+            class="candles-left"
+            id="candlesLeft">
+
+            5 candles left
+
+        </p>
+
+
+        <div
+            class="fireworks"
+            id="fireworks">
+
+            <span class="firework f1"></span>
+            <span class="firework f2"></span>
+            <span class="firework f3"></span>
+            <span class="firework f4"></span>
+            <span class="firework f5"></span>
+            <span class="firework f6"></span>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         BIRTHDAY DIALOG
+    ================================== -->
+
+    <div
+        class="dialog-backdrop"
+        id="birthdayDialog">
+
+        <div class="birthday-dialog">
+
+            <div class="dialog-bunny">
+                🐰
+            </div>
+
+            <p class="dialog-small">
+                THE WISH IS COMPLETE
+            </p>
+
+            <h2>
+                Happy Birthday,
+                <br>
+                <i>Rabbituu.</i>
+            </h2>
+
+            <p class="dialog-message">
+                I love you soo muchhh.
+                <br><br>
+                I want you forever
+                <br>
+                in my life.
+            </p>
+
+            <p class="dialog-sign">
+                — Your Singhania ❤️
+            </p>
+
+            <button
+                class="another-surprise"
+                id="anotherSurprise">
+
+                Another Surprise ✦
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+<!-- =================================
+     VIDEOS
+================================== -->
+
+<section
+    class="video-section"
+    id="videoSection">
+
+<p class="section-number">
+    03 / ONE LAST THING
+</p>
+
+<h2>
+    Okay...
+    <br>
+    <i>now watch these.</i>
+</h2>
+
+
+<!-- VIDEO 1 -->
+<div class="video-wrapper">
+
+    <video
+        controls
+        playsinline
+        preload="metadata">
+
+        <source
+            src="https://pub-ca65d0bbfabf4ee3b50dd8d2e98e6bc7.r2.dev/surprise-video-1.mp4"
+            type="video/mp4"
+        >
+
+        Your browser does not support video.
+
+    </video>
+
+</div>
+
+
+<!-- VIDEO 2 -->
+<div class="video-wrapper">
+
+    <video
+        controls
+        playsinline
+        preload="metadata">
+
+        <source
+            src="https://pub-ca65d0bbfabf4ee3b50dd8d2e98e6bc7.r2.dev/surprise-video-2.mp4"
+            type="video/mp4"
+        >
+
+        Your browser does not support video.
+
+    </video>
+
+</div>
+
+
+<!-- VIDEO 3 -->
+<div class="video-wrapper">
+
+    <video
+        controls
+        playsinline
+        preload="metadata">
+
+        <source
+            src="https://pub-ca65d0bbfabf4ee3b50dd8d2e98e6bc7.r2.dev/surprise-video-3.mp4"
+            type="video/mp4"
+        >
+
+        Your browser does not support video.
+
+    </video>
+
+</div>
+
+
+<button
+    class="love-question-button"
+    id="loveQuestionButton">
+
+    I have one question for you...
+
+</button>
+
+</section>
+
+
+
+    <!-- =================================
+         LOVE QUESTION
+    ================================== -->
+
+    <section
+        class="love-section"
+        id="loveSection">
+
+        <div class="love-question">
+
+            <div class="question-bunny">
+                🐰
+            </div>
+
+            <p>
+                And now...
+            </p>
+
+            <h2>
+                Do you love me?
+            </h2>
+
+            <div class="answer-buttons">
+
+                <button
+                    class="yes-button"
+                    id="yesButton">
+
+                    YES ❤️
+
+                </button>
+
+                <button
+                    class="no-button"
+                    id="noButton">
+
+                    NO
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         CAT KISS DIALOG
+    ================================== -->
+
+    <div
+        class="dialog-backdrop"
+        id="loveDialog">
+
+        <div class="love-dialog">
+
+            <img
+                src="gifs/cat-kiss.gif"
+                alt="Cat kissing"
+                class="cat-kiss"
+            >
+
+            <h2>
+                I KNEW IT. 😂❤️
+            </h2>
+
+            <p>
+                Come here, Rabbituu. 🐰
+            </p>
+
+            <p class="final-love">
+                I love you moreee.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="surprise.js"></script>
+
+</body>
+
+</html>
